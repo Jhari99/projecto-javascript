@@ -1,0 +1,611 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: black
+    ;
+    background-color:blueviolet;
+
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+.iniciar-sesion{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+img{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    text-align: left;
+    display: flex;
+    align-items: left;
+}
+
+header .search-container{
+    margin:0;
+    height: 30px;
+    display: flex;  
+    align-items:left;  
+    padding: 0px 30px;
+    
+}
+
+
+
+
+.search-input {
+    width: 700px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Bordes redondeados a la izquierda */
+    font-size: 16px;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border-left: none;
+    padding: 0px 15px;
+}
+
+
+
+header .carrito{
+    display: flex;
+    align-items: left;
+    flex-direction: row;
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 0;
+}
+
+header .cuenta{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0px 6px;
+}
+
+.cuenta p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cuenta .fa-user{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+header .coche{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0px 6px;
+}
+
+.coche p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.coche .fa-shopping-cart{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/*FORM*/    
+/*.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 50px;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    background-color: rgb(101, 33, 165);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.form-toggle button:not(:last-child) {
+    margin-right: 5px;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #574b90;
+}
+*/
+
+.oculto {
+    display: none;
+}
+
+
+
+
+.nav2{
+     /*display: flex; Establece el contenedor como un contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.nav2 a{
+    text-decoration: none;
+    margin-right: 50px;
+    
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("imagenes-anime/toji-fushiguro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#hero h1{
+    color: white;
+}
+
+#somos-jharis{
+    background-color: rgb(245,245,245);
+
+}
+
+#somos-jharis .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#nuestras-categorias{
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestras-categorias .container{
+    padding: 100px 0px;
+    
+}
+#nuestras-categorias p{
+    display: none;
+}
+
+#nuestras-categorias h2{
+    font-size: 3.2em;
+    margin-top: 0;
+}
+
+
+#nuestras-categorias .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("imagenes-anime/figuras-coleccion.png");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("imagenes-anime/peluches-onepiece.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("imagenes-anime/accesorios-onepiece.png");
+
+}
+
+
+#caracteristicas{
+    display: flex;
+    background-color: whitesmoke;
+    overflow-x: auto;
+}
+
+#caracteristicas .container{
+    padding-bottom: 40px;
+    
+}
+
+
+.nuevas-cartas {
+    display: flex;
+    justify-content: center; /* Centra las cards horizontalmente */
+    gap: 20px; /* Espaciado entre las cards */
+    overflow-x: auto; 
+    white-space: nowrap;
+}
+/**editing*/
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#8cc9a7;
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    overflow: hidden; /* Oculta contenido que exceda el tamaño de la card */
+    max-width: 300px; /* Ancho máximo de cada card */
+    transition: transform 0.2s; /* Transición para animaciones suaves */
+    width: 500px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón por encima */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Eleva la card cuando se pasa el mouse por encima */
+}
+
+.card img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la card */
+    height: 100%; /* Mantiene la proporción de la imagen */
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px; /* Espaciado interno para el contenido de la card */
+    word-wrap: break-word;
+    white-space: normal;
+
+    
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333; /* Color del texto del título */
+}
+
+.card p {
+    font-size: 0.9em;
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    color: #666; /* Color del texto del resumen */
+}
+
+
+
+#aplicaya{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("imagenes-anime/toji-fushiguro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 1px 0px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header .container{
+    }
+
+    header nav{
+        flex-direction: row;
+        display: flex; /* Activa flexbox */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Opcional: centra verticalmente si es necesario */
+        height: 100%;
+    }
+
+    .container .categorias{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .container .carta{
+        height: 100%;
+        width: 100%;
+    }
+
+    header .carrito{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        position: static;
+        margin-top: 55px;
+    }
+    
+    header .cuenta{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 6px;
+    }
+    
+    .cuenta p{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .cuenta .fa-user{
+        font-size: 36px;
+        margin-top: -10px;
+    
+    }
+    
+    header .coche{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 6px;
+    }
+    .coche p{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .coche .fa-shopping-cart{
+        font-size: 36px;
+        margin-top: -10px;
+    }
+
+    header .whatsapp{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 6px;
+    }
+
+    .whatsapp p{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .whatsapp .fa-whatsapp{
+        font-size: 36px;
+        margin-top: -20px;
+    
+    }
+
+
+    
+    #caracteristicas .container{
+        padding-bottom: 40px;
+    }
+    
+    
+    .nuevas-cartas {
+        display: flex;
+        flex-wrap: wrap; /* Permite que las cards se ajusten en múltiples filas */
+        justify-content: center; /* Centra las cards horizontalmente */
+        gap: 20px; /* Espaciado entre las cards */
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:#8cc9a7;
+        border-radius: 15px; /* Esquinas redondeadas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+        overflow: hidden; /* Oculta contenido que exceda el tamaño de la card */
+        max-width: 300px; /* Ancho máximo de cada card */
+        transition: transform 0.2s; /* Transición para animaciones suaves */
+        width: 500px;
+        height: auto;
+    }
+    
+    .card:hover {
+        transform: translateY(-10px); /* Eleva la card cuando se pasa el mouse por encima */
+    }
+    
+    .card img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho de la card */
+        height: 100%; /* Mantiene la proporción de la imagen */
+    }
+    
+    .card-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px; /* Espaciado interno para el contenido de la card */
+        word-wrap: break-word;
+        white-space: normal;
+    
+        
+    }
+    
+    .card h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #333; /* Color del texto del título */
+    }
+    
+    .card p {
+        font-size: 0.9em;
+        line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+        color: #666; /* Color del texto del resumen */
+    }
+    
+
+
+
+
+
+}
